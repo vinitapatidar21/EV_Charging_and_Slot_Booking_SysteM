@@ -1,0 +1,16 @@
+.station-marker {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .user-marker {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .mapboxgl-popup-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }

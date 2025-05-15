@@ -1,0 +1,73 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 204 100% 40%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 122 39% 49%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 204 100% 95%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 204 100% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Custom map styles */
+.maplibregl-map {
+  @apply rounded-lg shadow-md;
+}
+
+.maplibregl-marker {
+  @apply cursor-pointer transition-transform hover:scale-110;
+}
+
+.maplibregl-popup {
+  @apply max-w-[280px] z-50;
+}
+
+.maplibregl-popup-content {
+  @apply bg-white p-3 rounded-lg shadow-lg border border-ev-lightblue;
+}
+
+/* Custom station marker */
+.station-marker {
+  @apply w-8 h-8 rounded-full bg-ev-blue flex items-center justify-center text-white shadow-md cursor-pointer transition-all hover:scale-110;
+}
+
+/* Booking card styles */
+.booking-card {
+  @apply bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-all duration-300;
+}
